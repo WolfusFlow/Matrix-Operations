@@ -162,7 +162,7 @@ def inversion(matrix: list) -> typing.Tuple[list, str]:
         try:
             fdScaler = 1.0 / AM[fd][fd]
         except ZeroDivisionError as e:
-                return None, f"Error {e} in calculating determinant for matrix:\n"
+                return None, f"Error {e} in calculating focus diagonal scalar in matrix inversion\n"
         # scale fd row with fd inverse. 
         for j in range(n): # Use j to indicate column looping.
             AM[fd][j] *= fdScaler
@@ -350,13 +350,13 @@ def main():
                 if err == None:
                     print(res)
                 else:
-                    print(f"Go Error in inversion operation: {err}")
+                    print(f"Got Error in inversion operation: {err}")
             elif matrix_to_invert == 'm2':
                 res, err = inversion(matrix=matrix2)
                 if err == None:
                     print(res)
                 else:
-                    print(f"Go Error in inversion operation: {err}")
+                    print(f"Got Error in inversion operation: {err}")
             else:
                 print("Unknown value - try again and choose matrix1 -> 'm1' or  matrix2 -> 'm2'")
 

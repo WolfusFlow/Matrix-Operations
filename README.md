@@ -15,7 +15,7 @@ with 'space' separating them
 * For Sum and Subtraction the matrices(matrix1 and matrix2) have to be equal in case of order(rows == columns)
 * For multiplication operation columns of matrix1 should be equal to rows of matrix2
 ##### DIVISION INFORMATION
-* Division is truly an operation of inversing matrix1 and multiplying it with matrix2
+* Division in fact is an operation of inversing matrix1 and multiplying it with matrix2
 * For division operation(more info in above point) columns of matrix1 should be equal to rows of matrix2 and matrix2 have to be quadratic
 
 ### Available commands
